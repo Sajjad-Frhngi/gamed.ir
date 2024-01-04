@@ -340,7 +340,7 @@ table {
 /* Desktop Page */
 @media screen and (min-width:1024px) {
     body {
-        background: linear-gradient(to right, #69d2cd, #fd7aff);
+        background: linear-gradient(to right, #66ddcc, #66ddcc, #ffaaee, #ff77ff);
         transition: all .3s ease-in-out;
     }
 
