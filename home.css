@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;400;700&family=Rubik:wght@300;400;800&family=Vazirmatn:wght@300;400;700&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End CSS RESET! */
+/* The Fonts: "IBM Plex Sans Arabic" "Rubik" "Vazirmatn" */
+/* Mobile Page */
+@media screen and (max-width:767px) {
+
+    body {
+        background: linear-gradient(to bottom right, #eeaa99, #ff9999, #88ccff, #77ddff);
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: all .3s ease-in-out;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35%;
+        transition: all .3s ease-in-out;
+    }
+
+
+    .blink {
+        animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            color: #fff;
+            opacity: 0.01;
+        }
+    }
+
+    nav {
+        display: block;
+        width: 100% !important;
+    }
+
+    nav div {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-text {
+        font-family: "Vazirmatn", sans-serif;
+        cursor: pointer;
+        width: 100% !important;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 1rem;
+        text-align: center;
+        background-color: transparent;
+        border-radius: 2rem;
+        margin-bottom: 1rem;
+        color: linear-gradient(to right, #fff, #000);
+        transition: all .3s ease-in-out;
+    }
+
+    .nav-text:hover {
+        background-color: #00000020;
+        color: #88ccff;
+    }
+
+    .header1 {
+        display: block;
+    }
+
+    .title {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 2.5rem;
+        margin: 1.5rem;
+        text-align: center;
+    }
+
+    .title-span1 {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 2.5rem;
+        color: black;
+    }
+
+    .title-span2 {
+        font-family: "Rubik", sans-serif;
+        font-size: 5rem;
+        font-weight: 800;
+        line-height: 8rem;
+        color: rgb(255, 0, 0);
+        transition: all .3s ease-in-out;
+    }
+
+    .title-span3 {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 2rem;
+        color: rgb(100, 100, 100);
+    }
+
+    .header-img {
+        width: 80%;
+        margin: 2rem;
+    }
+}
+
+/* Tablet Page */
+@media screen and (min-width:768px) and (max-width:1023px) {
+    body {
+        background: linear-gradient(to right, #69d2cd, #fd7aff);
+        transition: all .3s ease-in-out;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 11%;
+        transition: all .3s ease-in-out;
+    }
+
+    .blink {
+        animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            color: #fff;
+            opacity: 0.01;
+        }
+    }
+
+    nav {
+        display: flex;
+        width: 100% !important;
+        margin: 1rem auto;
+    }
+
+    nav div {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbr {
+        display: none;
+    }
+
+    .nav-text {
+        font-family: "Vazirmatn", sans-serif;
+        cursor: pointer;
+        font-size: 1.6rem;
+        text-decoration: none;
+        padding: 1rem;
+        margin-right: 1rem;
+        background-color: transparent;
+        border-radius: 1rem;
+        color: #000;
+        transition: all .3s ease-in-out;
+    }
+
+    .nav-text:hover {
+        background-color: #00000020;
+        color: #fff;
+    }
+
+    .active {
+        background-color: #ff999999;
+        color: white;
+    }
+
+    .header1 {
+        display: block;
+    }
+
+    .title {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 4.5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+
+    .title-span1 {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 4.5rem;
+        color: black;
+    }
+
+    .title-span2 {
+        font-family: "Rubik", sans-serif;
+        font-size: 5.5rem;
+        font-weight: 800;
+        line-height: 8rem;
+        color: rgb(255, 0, 0);
+    }
+
+    .title-span3 {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 2.5rem;
+        color: #909090;
+        margin-right: 3rem;
+    }
+
+    .header-img {
+        display: block;
+        margin: auto;
+        width: 26rem;
+        height: 29rem;
+    }
+}
+
+/* Desktop Page */
+@media screen and (min-width:1024px) {
+    body {
+        background: linear-gradient(to right, #69d2cd, #fd7aff);
+        transition: all .3s ease-in-out;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 9%;
+        transition: all .3s ease-in-out;
+    }
+
+    .blink {
+        animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+        50% {
+            color: #fff;
+            opacity: 0.01;
+        }
+    }
+
+    nav {
+        display: flex;
+        width: 100% !important;
+        margin: 1rem auto;
+    }
+
+    nav div {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .navbr {
+        display: none;
+    }
+
+    .nav-text {
+        font-family: "Vazirmatn", sans-serif;
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-decoration: none;
+        padding: 1rem;
+        margin-right: 1rem;
+        background-color: transparent;
+        border-radius: 1rem;
+        color: #000;
+        transition: all .3s ease-in-out;
+    }
+
+    .nav-text:hover {
+        background-color: #00000020;
+        color: #fff;
+    }
+
+    .active {
+        background-color: #ff999999;
+        color: white;
+    }
+
+    .header1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 4rem;
+        margin: 1rem;
+    }
+
+    .title-span1 {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 4rem;
+        color: black;
+    }
+
+    .title-span2 {
+        font-family: "Rubik", sans-serif;
+        font-size: 6rem;
+        font-weight: 800;
+        line-height: 9rem;
+        color: rgb(255, 0, 0);
+    }
+
+    .title-span3 {
+        font-family: "IBM Plex Sans Arabic", sans-serif;
+        font-size: 3rem;
+        color: #909090;
+        margin-right: 3rem;
+    }
+
+    .header-img {
+        margin: 1.5rem 3rem;
+        width: 22.5rem;
+        height: 25rem;
+    }
+}
