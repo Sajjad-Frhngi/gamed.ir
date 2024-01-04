@@ -137,7 +137,7 @@ table {
 @media screen and (max-width:767px) {
 
     body {
-        background: linear-gradient(to bottom right, #eeaa99, #ff9999, #88ccff, #77ddff);
+        background: linear-gradient(to bottom right, #66ddcc, #66ddcc, #ffaaee, #ff77ff);
         background-size: cover;
         background-repeat: no-repeat;
         transition: all .3s ease-in-out;
@@ -185,7 +185,7 @@ table {
         background-color: transparent;
         border-radius: 2rem;
         margin-bottom: 1rem;
-        color: linear-gradient(to right, #fff, #000);
+        color: #000;
         transition: all .3s ease-in-out;
     }
 
@@ -235,7 +235,7 @@ table {
 /* Tablet Page */
 @media screen and (min-width:768px) and (max-width:1023px) {
     body {
-        background: linear-gradient(to right, #69d2cd, #fd7aff);
+        background: linear-gradient(to right, #66ddcc, #66ddcc, #ffaaee, #ff77ff);
         transition: all .3s ease-in-out;
     }
 
