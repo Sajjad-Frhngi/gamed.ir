@@ -388,6 +388,7 @@ table {
 
 
     footer {
+        bottom: 0;
         background-color: #333333bb;
         color: #fff;
         padding: 1rem;
@@ -712,6 +713,7 @@ table {
 
 
     footer {
+        bottom: 0;
         background-color: #333333bb;
         color: #fff;
         padding: 1rem;
@@ -881,7 +883,7 @@ table {
     .title-span3 {
         font-family: "IBM Plex Sans Arabic", sans-serif;
         font-size: 3rem;
-        color: #707070;
+        color: #808080;
         margin-right: 3rem;
     }
 
@@ -1047,6 +1049,7 @@ table {
     }
 
     footer {
+        bottom: 0;
         background-color: #333333bb;
         color: #fff;
         padding: 1rem;
