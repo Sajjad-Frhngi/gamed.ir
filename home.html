@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div id="announcementBar">
+        فراتر بازی کن!
+    </div>
     <header>
         <a href="../gamed.ir/home.html" target="_blank" rel="noopener noreferrer">
             <img src="../gamed.ir/main-images/logo-gamed.png" alt="LOGO" class="logo">
@@ -20,7 +23,7 @@
                 <a href="#" class="nav-text active">
                     خانه
                 </a>
-                <a href="#" class="nav-text">
+                <a href="#" class="nav-text" id="go-to-categories">
                     دسته‌بندی
                 </a>
                 <br class="navbr">
@@ -36,11 +39,110 @@
             <h1 class="title">معرفی به روز <br>
                 <span class="title-span1">بهترین بازی های دنیا</span><br>
                 <span class="title-span2">با فرابازی</span><br>
-                <span class="title-span3">فراتر بازی کن!</span>
+                <!-- <span class="title-span3">فراتر بازی کن!</span> -->
             </h1>
             <img src="../gamed.ir/main-images/Header-image.png" alt="Image" class="header-img">
         </div>
     </header>
+    <main>
+        <div class="top-articles-section">
+            <h3>پربازدید‌ترین مقاله ها</h3>
+            <div id="articleContainer">
+                <!-- Articles will be dynamically added here -->
+            </div>
+        </div>
+        <div id="categories">
+            <h4>دسته‌بندی ها:</h4>
+            <a href="#">
+                <div id="action-cat" class="category-box">
+                    <h5>
+                        اکشن
+                    </h5>
+                </div>
+            </a>
+            <a href="#">
+                <div id="adventure-cat" class="category-box">
+                    <h5>
+                        ماجراجویی
+                    </h5>
+                </div>
+            </a>
+            <a href="#">
+                <div id="sport-cat" class="category-box">
+                    <h5>
+                        ورزشی
+                    </h5>
+                </div>
+            </a>
+            <a href="#">
+                <div id="scary-cat" class="category-box">
+                    <h5>
+                        ترسناک
+                    </h5>
+                </div>
+            </a>
+        </div>
+        <div class="top-games-section">
+            <h3>بازی های برتر</h3>
+            <div id="gameContainer">
+                <!-- Articles will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-section">
+            <h3>تماس با ما</h3>
+            <ul class="contact-list">
+                <li><a href="https://instagram.com/gamed_ir"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                            width="3rem" height="3rem" style="margin: 1rem;">
+                            <path fill="#f48fb1"
+                                d="M21,46h15c5.5,0,10-4.5,10-10V21c0-5.5-4.5-10-10-10H21c-5.5,0-10,4.5-10,10v15C11,41.5,15.5,46,21,46z" />
+                            <path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="3"
+                                d="M41.5,21.1v-4.6c0-5.5-4.5-10-10-10h-15c-5.5,0-10,4.5-10,10v3" />
+                            <path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-miterlimit="10" stroke-width="3"
+                                d="M6.5,25.6v5.9c0,5.5,4.5,10,10,10h15c5.5,0,10-4.5,10-10v-4.6" />
+                            <path fill="none" stroke="#18193f" stroke-miterlimit="10" stroke-width="3"
+                                d="M24,15.5c-4.7,0-8.5,3.8-8.5,8.5s3.8,8.5,8.5,8.5s8.5-3.8,8.5-8.5S28.7,15.5,24,15.5z" />
+                            <path fill="#18193f" d="M34,12c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S35.1,12,34,12z" />
+                        </svg></a></li>
+                <li><a href="https://twitter.com/gamed_ir"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
+                            width="3rem" height="3rem" style="margin: 1rem;">
+                            <path fill="#9fa8da"
+                                d="M40.121,44H15.879C13.737,44,12,42.263,12,40.121V15.879C12,13.737,13.737,12,15.879,12h24.242	C42.263,12,44,13.737,44,15.879v24.242C44,42.263,42.263,44,40.121,44z" />
+                            <path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3" d="M40.5,31.5v5	c0,2.209-1.791,4-4,4h-25c-2.209,0-4-1.791-4-4V26" />
+                            <path fill="none" stroke="#18193f" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="3"
+                                d="M7.5,18.064V11.5	c0-2.209,1.791-4,4-4h25c2.209,0,4,1.791,4,4v11.33" />
+                            <path fill="#18193f"
+                                d="M34.257,34H27.82L13.829,14h6.437L34.257,34z M28.587,32.304h2.563L19.499,15.696h-2.563 L28.587,32.304z" />
+                            <polygon fill="#18193f" points="15.866,34 23.069,25.656 22.127,24.407 13.823,34" />
+                            <polygon fill="#18193f" points="24.45,21.721 25.355,23.01 33.136,14 31.136,14" />
+                        </svg></a></li>
+                <li><a href="mailto:info@gamed.ir"><img src="../gamed.ir/main-images/mail-96.png"
+                            style="width: 3rem; margin: 1rem;" class="image-mail"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>درباره ما</h3>
+            <p>فرابازی پروژه‌ای عام‌المنفعه است که هدف آن معرفی برترین و پرطرفدارترین بازی های دنیاست. دسته‌بندی موردنظر
+                خود را انتخاب کنید و بازی های برتر را ببینید و توضیحات مربوط به آن را بخوانید!<br>اثری از گروه برنامه
+                نویسی سمی کالن</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>لینک‌های مفید</h3>
+            <ul class="site-links">
+                <li><a href="#">صفحه اصلی</a></li>
+                <li><a href="#">دسته بندی‌ها</a></li>
+                <li><a href="#">تماس با ما</a></li>
+                <li><a href="#">حمایت مالی</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 <script src="../gamed.ir/scripts.js"></script>
 

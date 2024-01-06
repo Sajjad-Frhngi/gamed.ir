@@ -61,3 +61,69 @@ document.addEventListener('DOMContentLoaded', function () {
         articleContainer.appendChild(articleElement);
     });
 });
+
+document.getElementById('go-to-categories').addEventListener('click', function () {
+    const categoriesSection = document.getElementById('categories');
+
+    window.scrollTo({
+        top: categoriesSection.offsetTop,
+        behavior: 'smooth'
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const gameContainer = document.getElementById('gameContainer');
+
+    const topGames = [
+        {
+            title: 'بازی 1',
+            image: '../gamed.ir/main-images/logo-gamed.png',
+            link: '../gamed.ir/',
+            description: 'لورم ایپسوم دالر.',
+        },
+        {
+            title: 'بازی 2',
+            image: '.jpg',
+            link: 'a.html',
+            description: 'لورم ایپسوم دالر.',
+        },
+        {
+            title: 'بازی 3',
+            image: '.jpg',
+            link: '.html',
+            description: 'لورم ایپسوم دالر.',
+        },
+        {
+            title: 'بازی 4',
+            image: '.jpg',
+            link: '.html',
+            description: 'لورم ایپسوم دالر.',
+        },
+    ];
+
+    // اضافه کردن بازی ها به صفحه
+    topGames.forEach(game => {
+        const gameElement = document.createElement('div');
+        gameElement.classList.add('game');
+
+        const imageElement = document.createElement('img');
+        imageElement.src = game.image;
+        gameElement.appendChild(imageElement);
+
+        const titleElement = document.createElement('h3');
+        titleElement.textContent = game.title;
+        gameElement.appendChild(titleElement);
+
+        const linkElement = document.createElement('a');
+        linkElement.href = game.link;
+        linkElement.textContent = 'بیشتر بخوانید...';
+        gameElement.appendChild(linkElement);
+
+        const descElement = document.createElement('p');
+        descElement.href = game.description;
+        descElement.textContent = game.description;
+        gameElement.appendChild(descElement);
+
+        gameContainer.appendChild(gameElement);
+    });
+});
