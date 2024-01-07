@@ -127,3 +127,4 @@ document.addEventListener('DOMContentLoaded', function () {
         gameContainer.appendChild(gameElement);
     });
 });
+

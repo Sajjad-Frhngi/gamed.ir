@@ -184,7 +184,7 @@ table {
         text-align: center;
         background-color: transparent;
         border-radius: 2rem;
-        margin-bottom: 1rem;
+        margin-bottom: 6rem;
         color: #000;
         transition: all .3s ease-in-out;
     }
@@ -223,7 +223,10 @@ table {
     .title-span3 {
         font-family: "IBM Plex Sans Arabic", sans-serif;
         font-size: 2rem;
-        color: rgb(100, 100, 100);
+        color: #808080;
+        background-color: #88cbff55;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5rem;
     }
 
     .header-img {
@@ -396,6 +399,7 @@ table {
         justify-content: space-evenly;
         align-items: flex-start;
         transition: all .3s ease-in-out;
+        border-radius: 2rem 0 0 0;
     }
 
     svg,
@@ -459,6 +463,13 @@ table {
         background: linear-gradient(to right, #66ddcc, #66ddcc, #ffaaee, #ff77ff);
         transition: all .3s ease-in-out;
     }
+
+    header {
+        background-image: url(../gamed.ir/main-images/Ellipse-right.png);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
 
     .logo {
         display: block;
@@ -548,6 +559,9 @@ table {
         font-size: 2.5rem;
         color: #909090;
         margin-right: 3rem;
+        background-color: #88cbff55;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5rem;
     }
 
     .header-img {
@@ -721,6 +735,7 @@ table {
         justify-content: space-around;
         align-items: flex-start;
         transition: all .3s ease-in-out;
+        border-radius: 2rem 0 0 0;
     }
 
     svg,
@@ -816,6 +831,12 @@ table {
         }
     }
 
+    header {
+        background-image: url(../gamed.ir/main-images/Ellipse-right.png);
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
     nav {
         display: flex;
         width: 100% !important;
@@ -882,9 +903,12 @@ table {
 
     .title-span3 {
         font-family: "IBM Plex Sans Arabic", sans-serif;
-        font-size: 3rem;
+        font-size: 2.5rem;
         color: #808080;
         margin-right: 3rem;
+        background-color: #88cbff55;
+        padding: 0.2rem 0.5rem;
+        border-radius: 5rem;
     }
 
     .header-img {
@@ -933,6 +957,11 @@ table {
         text-decoration: none;
         text-align: center;
         padding: 0.5rem;
+        transition: all .2s ease-in-out;
+    }
+
+    .article a:hover {
+        color: #eeaaee;
     }
 
     .article h3 {
@@ -1057,6 +1086,7 @@ table {
         justify-content: space-around;
         align-items: flex-start;
         transition: all .3s ease-in-out;
+        border-radius: 2rem 0 0 0;
     }
 
     svg,
@@ -1111,5 +1141,23 @@ table {
 
     .site-links a:hover {
         color: #ff77ff;
+    }
+
+
+    body::-webkit-scrollbar {
+        width: 10px;
+        /* عرض نوار اسکرول */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #66ddcc;
+        /* رنگ قسمت قلمه */
+        border-radius: 0.3rem;
+        /* گرد کردن گوشه‌ها */
+    }
+
+    body::-webkit-scrollbar-track {
+        background-color: #ffaaee;
+        /* رنگ پس زمینه نوار اسکرول */
     }
 }
