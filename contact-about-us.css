@@ -225,6 +225,7 @@ table {
 
     footer {
         bottom: 0;
+        position: relative;
         background-color: #333333bb;
         color: #fff;
         padding: 1rem;
@@ -286,6 +287,26 @@ table {
 
     .site-links a:hover {
         color: #ff77ff;
+    }
+
+    .social {
+        display: block;
+        justify-content: center;
+    }
+
+    .social img,
+    svg {
+        display: block;
+        width: 95%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .social p {
+        font-family: "Rubik", sans-serif;
+        text-align: center;
+        margin: 1.5rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -393,6 +414,7 @@ table {
         align-items: flex-start;
         transition: all .3s ease-in-out;
         bottom: 0;
+        position: fixed;
     }
 
     svg,
@@ -447,6 +469,26 @@ table {
 
     .site-links a:hover {
         color: #ff77ff;
+    }
+
+    .social {
+        display: block;
+    }
+
+    .social img,
+    svg {
+        display: block;
+        width: 95%;
+        margin: auto;
+        justify-content: center;
+    }
+
+
+    .social p {
+        font-family: "Rubik", sans-serif;
+        text-align: center;
+        margin: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -532,14 +574,19 @@ table {
         margin: 3rem;
         font-size: 3rem;
         font-family: "IBM Plex Sans Arabic", sans-serif;
+        text-shadow: 2px 2px 3px #ffaaeecc;
     }
 
     h6 {
         text-align: center;
-        margin: 3rem;
-        font-size: 2rem;
+        margin: 2rem 3rem;
+        font-size: 1.5rem;
         font-family: "Vazirmatn", sans-serif;
         line-height: 2.5rem;
+    }
+
+    main {
+        margin-bottom: calc();
     }
 
     a {
@@ -558,10 +605,12 @@ table {
 
     footer {
         bottom: 0;
+        position: fixed;
         background-color: #333333bb;
         color: #fff;
         padding: 1rem;
         display: flex;
+        width: 100%;
         justify-content: space-around;
         align-items: flex-start;
         transition: all .3s ease-in-out;
@@ -619,5 +668,35 @@ table {
 
     .site-links a:hover {
         color: #ff77ff;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .social p {
+        font-family: "Rubik", sans-serif;
+        text-align: center;
+        margin: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    body::-webkit-scrollbar {
+        width: 10px;
+        /* عرض نوار اسکرول */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: #66ddcc;
+        /* رنگ قسمت قلمه */
+        border-radius: 0.5rem;
+        /* گرد کردن گوشه‌ها */
+        margin: 0 0.1rem;
+    }
+
+    body::-webkit-scrollbar-track {
+        background-color: #ffaaee;
+        /* رنگ پس زمینه نوار اسکرول */
     }
 }
