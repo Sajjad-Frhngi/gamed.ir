@@ -141,6 +141,7 @@ table {
         background-size: cover;
         background-repeat: no-repeat;
         transition: all .3s ease-in-out;
+        user-select: none;
     }
 
     .logo {
@@ -468,6 +469,7 @@ table {
         background-image: url(../gamed.ir/main-images/Ellipse-right.png);
         background-position: right;
         background-repeat: no-repeat;
+        user-select: none;
     }
 
 
@@ -835,6 +837,7 @@ table {
         background-image: url(../gamed.ir/main-images/Ellipse-right.png);
         background-position: right;
         background-repeat: no-repeat;
+        user-select: none;
     }
 
     nav {
