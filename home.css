@@ -946,6 +946,11 @@ table {
         flex-direction: column;
     }
 
+    .article:hover {
+        transform: scale(0.98);
+        box-shadow: 0px 0px 30px 1px rgba(6, 2, 255, 0.3);
+    }
+
     .article img {
         width: 10%;
         height: 10%;
@@ -995,6 +1000,11 @@ table {
         border-radius: 0.5rem;
         display: flex;
         flex-direction: row;
+    }
+
+    .game:hover {
+        transform: scale(0.98);
+        box-shadow: 0px 0px 30px 1px rgba(6, 2, 255, 0.3);
     }
 
     .game img {
