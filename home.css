@@ -872,11 +872,13 @@ table {
     .nav-text:hover {
         background-color: #00000020;
         color: #fff;
+        box-shadow: 0px 0px 10px 1px #eeaaee;
     }
 
     .active {
         background-color: #ff999999;
         color: white;
+        box-shadow: 0px 0px 10px 1px #eeaaee;
     }
 
     .header1 {
@@ -1000,6 +1002,7 @@ table {
         border-radius: 0.5rem;
         display: flex;
         flex-direction: row;
+        box-shadow: 0px 0px 10px 1px #eeaaee;
     }
 
     .game:hover {
