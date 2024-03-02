@@ -1,19 +1,3 @@
-const element = document.querySelector('.logo');
-// Add the "blink" class to make the text blink
-element.classList.add('blink');
-
-
-const announcementBar = document.getElementById('announcementBar');
-
-// Customize the content and style as needed
-announcementBar.style.backgroundColor = '#00aaff';
-announcementBar.style.padding = '0.8rem';
-announcementBar.style.textAlign = 'center';
-announcementBar.style.color = '#fff';
-announcementBar.style.fontFamily = "Vazirmatn";
-announcementBar.style.fontSize = "1rem";
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const articleContainer = document.getElementById('articleContainer');
 
