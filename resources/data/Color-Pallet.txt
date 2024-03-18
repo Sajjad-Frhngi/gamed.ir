@@ -1,3 +1,3 @@
 to right
 
-#66ddcc, #66ddcc, #ffaaee, #ff77ff
+#4895ef   ,   #ff0000

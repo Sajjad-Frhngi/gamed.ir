@@ -1,5 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('go-to-categories').addEventListener('click', function () {
+        const categoriesSection = document.getElementById('categories');
+        window.scrollTo({
+            top: categoriesSection.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+
     const articleContainer = document.getElementById('articleContainer');
+    const gameContainer = document.getElementById('gameContainer');
 
     const topArticles = [
         {
@@ -33,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         imageElement.src = article.image;
         articleElement.appendChild(imageElement);
 
-        const titleElement = document.createElement('h3');
+        const titleElement = document.createElement('h4');
         titleElement.textContent = article.title;
         articleElement.appendChild(titleElement);
 
@@ -44,43 +53,30 @@ document.addEventListener('DOMContentLoaded', function () {
 
         articleContainer.appendChild(articleElement);
     });
-});
-
-document.getElementById('go-to-categories').addEventListener('click', function () {
-    const categoriesSection = document.getElementById('categories');
-
-    window.scrollTo({
-        top: categoriesSection.offsetTop,
-        behavior: 'smooth'
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-    const gameContainer = document.getElementById('gameContainer');
 
     const topGames = [
         {
             title: 'بازی 1',
-            image: '../gamed.ir/main-images/logo-gamed.png',
-            link: '../gamed.ir/',
+            image: 'game1.png', // پسوند فایل همراه با نام فایل
+            link: 'a.html',
             description: 'لورم ایپسوم دالر.',
         },
         {
             title: 'بازی 2',
-            image: '.jpg',
+            image: 'game2.jpg', // پسوند فایل همراه با نام فایل
             link: 'a.html',
             description: 'لورم ایپسوم دالر.',
         },
         {
             title: 'بازی 3',
-            image: '.jpg',
-            link: '.html',
+            image: 'game3.jpg', // پسوند فایل همراه با نام فایل
+            link: 'a.html',
             description: 'لورم ایپسوم دالر.',
         },
         {
             title: 'بازی 4',
-            image: '.jpg',
-            link: '.html',
+            image: 'game4.jpg', // پسوند فایل همراه با نام فایل
+            link: 'a.html',
             description: 'لورم ایپسوم دالر.',
         },
     ];
@@ -94,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
         imageElement.src = game.image;
         gameElement.appendChild(imageElement);
 
-        const titleElement = document.createElement('h3');
+        const titleElement = document.createElement('h4');
         titleElement.textContent = game.title;
         gameElement.appendChild(titleElement);
 
@@ -104,11 +100,9 @@ document.addEventListener('DOMContentLoaded', function () {
         gameElement.appendChild(linkElement);
 
         const descElement = document.createElement('p');
-        descElement.href = game.description;
-        descElement.textContent = game.description;
+        descElement.textContent = game.description; // استفاده از textContent برای توضیحات
         gameElement.appendChild(descElement);
 
         gameContainer.appendChild(gameElement);
     });
 });
-
