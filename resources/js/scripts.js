@@ -106,3 +106,9 @@ document.addEventListener('DOMContentLoaded', function () {
         gameContainer.appendChild(gameElement);
     });
 });
+window.addEventListener('resize', function () {
+    if (window.innerWidth < 310) {
+        alert('این سایت با اندازه عرض صفحه شما سازگاری ندارد، لطفا از دستگاه یا صفحه بزرگتر استفاده نمایید!');
+        console.log("Sorry, this width is not supported!")
+    }
+});

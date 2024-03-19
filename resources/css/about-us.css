@@ -132,12 +132,11 @@ table {
 }
 
 /* End CSS RESET! */
-/* The Fonts: "IBM Plex Sans Arabic" "Rubik" "Vazirmatn" */
+/* The Fonts: "Vazirmatn" */
 /* Mobile Page */
 @media screen and (max-width:767px) {
-
     body {
-        background: linear-gradient(to bottom right, #66ddcc, #66ddcc, #ffaaee, #ff77ff);
+        background-color: #fff;
         background-size: cover;
         background-repeat: no-repeat;
         transition: all .3s ease-in-out;
