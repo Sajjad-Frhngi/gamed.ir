@@ -1,35 +1,31 @@
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('go-to-categories').addEventListener('click', function () {
-        const categoriesSection = document.getElementById('categories');
-        window.scrollTo({
-            top: categoriesSection.offsetTop,
-            behavior: 'smooth'
-        });
-    });
-
     const articleContainer = document.getElementById('articleContainer');
     const gameContainer = document.getElementById('gameContainer');
 
     const topArticles = [
         {
             title: 'مقاله 1',
-            image: '../gamed.ir/main-images/logo-gamed.png',
+            image: '../gamed.ir/resources/images/home_images/ps-plat.png',
             link: '../gamed.ir/article1.html',
+            description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
         },
         {
             title: 'Article 2',
-            image: 'image2.jpg',
+            image: '../gamed.ir/resources/images/home_images/ps-plat.png',
             link: 'article2.html',
+            description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
         },
         {
-            title: 'Article 3',
-            image: 'image3.jpg',
+            title: 'فوتبال سال 2024، فیفا 24',
+            image: '../gamed.ir/resources/images/home_images/ps-plat.png',
             link: 'article3.html',
+            description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
         },
         {
             title: 'Article 4',
-            image: 'image4.jpg',
+            image: '../gamed.ir/resources/images/home_images/ps-plat.png',
             link: 'article4.html',
+            description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
         },
     ];
 
@@ -51,33 +47,37 @@ document.addEventListener('DOMContentLoaded', function () {
         linkElement.textContent = 'بیشتر بخوانید...';
         articleElement.appendChild(linkElement);
 
+        const descElement = document.createElement('p');
+        descElement.textContent = article.description; // استفاده از textContent برای توضیحات
+        articleElement.appendChild(descElement);
+
         articleContainer.appendChild(articleElement);
     });
 
     const topGames = [
         {
             title: 'بازی 1',
-            image: 'game1.png', // پسوند فایل همراه با نام فایل
+            image: '../gamed.ir/resources/images/logo-gamed.png',
             link: 'a.html',
-            description: 'لورم ایپسوم دالر.',
+            category: 'اکشن',
         },
         {
             title: 'بازی 2',
-            image: 'game2.jpg', // پسوند فایل همراه با نام فایل
+            image: '../gamed.ir/resources/images/logo-gamed.png',
             link: 'a.html',
-            description: 'لورم ایپسوم دالر.',
+            category: 'ترسناک',
         },
         {
             title: 'بازی 3',
-            image: 'game3.jpg', // پسوند فایل همراه با نام فایل
+            image: '../gamed.ir/resources/images/logo-gamed.png',
             link: 'a.html',
-            description: 'لورم ایپسوم دالر.',
+            category: 'ماجراجویی',
         },
         {
             title: 'بازی 4',
-            image: 'game4.jpg', // پسوند فایل همراه با نام فایل
+            image: '../gamed.ir/resources/images/logo-gamed.png',
             link: 'a.html',
-            description: 'لورم ایپسوم دالر.',
+            category: 'ورزشی',
         },
     ];
 
@@ -96,16 +96,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const linkElement = document.createElement('a');
         linkElement.href = game.link;
-        linkElement.textContent = 'بیشتر بخوانید...';
+        linkElement.textContent = 'اطلاعات بیشتر...';
         gameElement.appendChild(linkElement);
 
-        const descElement = document.createElement('p');
-        descElement.textContent = game.description; // استفاده از textContent برای توضیحات
-        gameElement.appendChild(descElement);
+        const categoryElement = document.createElement('p');
+        categoryElement.textContent = "دسته‌بندی: " + game.category;
+        gameElement.appendChild(categoryElement);
 
         gameContainer.appendChild(gameElement);
     });
+
+    const titleElement = document.getElementById('title');
+
+    titleElement.addEventListener('mousemove', function (event) {
+        const offsetX = event.offsetX;
+        const offsetY = event.offsetY;
+
+        const tiltX = (offsetX / titleElement.offsetWidth - 0.5) * 22;
+        const tiltY = (offsetY / titleElement.offsetHeight - 0.5) * 22;
+
+        titleElement.querySelector('.subtitle').style.transform = `translate(${tiltX}px, ${tiltY}px)`;
+    });
 });
+
 window.addEventListener('resize', function () {
     if (window.innerWidth < 310) {
         alert('این سایت با اندازه عرض صفحه شما سازگاری ندارد، لطفا از دستگاه یا صفحه بزرگتر استفاده نمایید!');

@@ -10,7 +10,7 @@
     <meta name="author" content="Sajjad Farhangi">
     <meta name="author" content="Mohammad Rashed Barati">
     <title> معرفی بهترین بازی های دنیا! | Gamed ◈ فرابازی </title>
-    <link rel="shortcut icon" href="../gamed.ir/resources/images/icon2.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../gamed.ir/resources/images/icon2.ico" type="image/icon">
     <link rel="stylesheet" href="../gamed.ir/resources/css/home.css">
     <script src="../gamed.ir/resources/js/scripts.js"></script>
 </head>
@@ -20,12 +20,19 @@
         <nav>
             <div id="navbar-id">
                 <a href="" class="nav-text active">خانه</a>
-                <a href="#categories" class="nav-text" id="go-to-categories">دسته‌بندی</a>
-                <a href="../gamed.ir/home.html" target="_blank" rel="noopener noreferrer" class="logo-link">
+                <div class="dropdown">
+                    <button class="dropbtn">دسته‌بندی &dArr;</button>
+                    <div class="dropdown-content">
+                        <a href="../gamed.ir/articles/action-category.html">اکشن</a>
+                        <a href="../gamed.ir/articles/sport-category.html">ورزشی</a>
+                        <a href="../gamed.ir/articles/adventure-category.html">ماجراجویی</a>
+                        <a href="../gamed.ir/articles/scary-category.html">ترسناک</a>
+                    </div>
+                </div> <a href="../gamed.ir/home.html" target="_blank" rel="noopener noreferrer" class="logo-link">
                     <img src="../gamed.ir/resources/images/logo-gamed.png" alt="LOGO" class="logo">
                 </a>
                 <div class="dropdown">
-                    <button class="dropbtn">پلتفرم</button>
+                    <button class="dropbtn">پلتفرم &dArr;</button>
                     <div class="dropdown-content">
                         <a href="../gamed.ir/articles/playstation.html">PlayStation</a>
                         <a href="../gamed.ir/articles/pc.html">PC</a>
@@ -37,7 +44,7 @@
         </nav>
 
         <div class="header1">
-            <h1 class="title">
+            <h1 class="title" id="title">
                 معرفی بهترین بازی‌های دنیا با
                 <strong>
                     <p class="farabazi">فرابازی</p>
@@ -87,6 +94,8 @@
                 <!-- Articles will be dynamically added here -->
             </div>
         </div>
+        <img src="../gamed.ir/resources/images/wave-right.webp"
+            style="width: 50%; opacity: 60%; right: 0; margin: 5rem 0 -2rem 0;">
         <div id="platforms">
             <h4>پلتفرم ها:</h4>
             <a href="#">
