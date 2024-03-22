@@ -117,6 +117,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
         titleElement.querySelector('.subtitle').style.transform = `translate(${tiltX}px, ${tiltY}px)`;
     });
+
+
+    if ("loading" in HTMLImageElement.prototype) {
+        const images = document.querySelectorAll("img[loading='lazy']");
+        images.forEach(img => {
+            img.setAttribute("loading", "lazy");
+        });
+    } else {
+        console.log("مرورگر از lazy loading پشتیبانی نمی‌کند.");
+    }
+
+    if ("loading" in HTMLImageElement.prototype) {
+        const headImage = document.getElementById("")
+    }
 });
 
 window.addEventListener('resize', function () {
