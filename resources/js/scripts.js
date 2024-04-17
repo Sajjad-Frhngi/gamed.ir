@@ -4,29 +4,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const topArticles = [
         {
-            title: 'مقاله 1',
-            image: '../gamed.ir/resources/images/home_images/ps-plat.png',
+            title: 'حماسه‌ای درام و هیجان‌انگیز در موسیقی',
+            image: '../gamed.ir/resources/images/games-articles/final-fantasy.png',
             link: '../gamed.ir/article1.html',
-            description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
+            description: 'یک موسیقی خوب و گوش‌نواز می‌تواند لذت مبارزه را دوچندان کند. همچنین موسیقی در میان‌پرده‌های سینمایی بازی هم نقش داشته و باعث می‌شود تا بازیکن بهتر بتواند با وقایع داستانی و سکانس‌های درام یا هیجان‌انگیز و حماسی بازی ارتباط برقرار کند...',
         },
         {
-            title: 'Article 2',
-            image: '../gamed.ir/resources/images/home_images/ps-plat.png',
-            link: 'article2.html',
-            description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
+            title: 'شاهکار اپیک‌گیمز، بهترین بازی سال',
+            image: '../gamed.ir/resources/images/games-articles/alanwake2.png',
+            link: '../gamed.ir/articles/best-game.html',
+            description: 'این داستان دنباله‌ای بر آلن ویک است و داستان رمان‌نویس پرفروش ترسناک آلن ویک را دنبال می‌کند که به مدت ۱۳ سال در یک بُعد جایگزین گرفتار شده‌است و تلاش می‌کند با نوشتن داستانی ترسناک که شامل یک مأمور اف‌بی‌آی به نام ساگا اندرسون است، فرار کند...',
         },
         {
-            title: 'فوتبال سال 2024، فیفا 24',
-            image: '../gamed.ir/resources/images/home_images/ps-plat.png',
-            link: 'article3.html',
-            description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
+            title: 'فلسفه تغییر نام، FC24',
+            image: '../gamed.ir/resources/images/games-articles/fifa24.png',
+            link: '../gamed.ir/articles/fc24name.html',
+            description: 'درحالی که منتظر انتشار فیفا24 بودیم، این بار شرکت هنرهای الکترونیک، با نامی جدید از برترین بازی فوتبالی دنیا رونمایی کرد و کامل‌ترین نسخه تاریخ فیفا را منتشر کرد...',
         },
-        {
-            title: 'Article 4',
-            image: '../gamed.ir/resources/images/home_images/ps-plat.png',
-            link: 'article4.html',
-            description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
-        },
+        // {
+        //     title: 'Article 4',
+        //     image: '../gamed.ir/resources/images/home_images/ps-plat.png',
+        //     link: 'article4.html',
+        //     description: 'لورم ایپسوم دالر. یه متن تصادفی چرت پرت است که نمیداند درباره آسمان، پرتقال خورد و گفت : چه جالب است که هواپیما شنا میکند و حرف نمیزند. امیدوارم امسال لپتاپم آشغال ها را فوت کند تا خنک شوند و انقدر اذیت مان نکنند...',
+        // },
     ];
 
     // اضافه کردن مقالات به صفحه
@@ -56,29 +56,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const topGames = [
         {
-            title: 'بازی 1',
-            image: '../gamed.ir/resources/images/logo-gamed.png',
-            link: 'a.html',
-            category: 'اکشن',
-        },
-        {
-            title: 'بازی 2',
-            image: '../gamed.ir/resources/images/logo-gamed.png',
+            title: 'کابوس های کوچک (Little nightmares)',
+            image: '../gamed.ir/resources/images/games-articles/little-nightmare.png',
             link: 'a.html',
             category: 'ترسناک',
         },
         {
-            title: 'بازی 3',
-            image: '../gamed.ir/resources/images/logo-gamed.png',
+            title: 'خدای جنگ: رگناروک (GoW: Ragnarök)',
+            image: '../gamed.ir/resources/images/games-articles/godofwar5.png',
             link: 'a.html',
-            category: 'ماجراجویی',
+            category: 'اکشن',
         },
-        {
-            title: 'بازی 4',
-            image: '../gamed.ir/resources/images/logo-gamed.png',
-            link: 'a.html',
-            category: 'ورزشی',
-        },
+        // {
+        //     title: 'بازی 3',
+        //     image: '../gamed.ir/resources/images/logo-gamed.png',
+        //     link: 'a.html',
+        //     category: 'ماجراجویی',
+        // },
+        // {
+        //     title: 'بازی 4',
+        //     image: '../gamed.ir/resources/images/logo-gamed.png',
+        //     link: 'a.html',
+        //     category: 'ورزشی',
+        // },
     ];
 
     // اضافه کردن بازی ها به صفحه

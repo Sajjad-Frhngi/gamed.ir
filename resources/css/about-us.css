@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;400;700&family=Rubik:wght@300;400;800&family=Vazirmatn:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
 
 html,
 body,
@@ -132,106 +132,168 @@ table {
 }
 
 /* End CSS RESET! */
-/* The Fonts: "Vazirmatn" */
+
+@media screen and (max-width:318px) {
+    * {
+        display: none;
+    }
+}
+
 /* Mobile Page */
-@media screen and (max-width:767px) {
+@media screen and (min-width:318px) and (max-width:767px) {
     body {
-        background-color: #fff;
-        background-size: cover;
+        transition: all .2s ease-in-out;
+        user-select: none;
+    }
+
+    header {
+        background-image: url(../images/Ellipse-right.png);
         background-repeat: no-repeat;
-        transition: all .3s ease-in-out;
+        background-position-y: top;
+        background-position-x: right;
+        background-size: 20%;
     }
 
     .logo {
+        width: 100%;
+        max-width: 70px;
+        height: auto;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 35%;
-        transition: all .3s ease-in-out;
-    }
-
-
-    .blink {
-        animation: blinker 1.5s linear infinite;
-    }
-
-    @keyframes blinker {
-        50% {
-            color: #fff;
-            opacity: 0.01;
-        }
+        margin: 0 auto;
     }
 
     nav {
-        display: block;
-        width: 100% !important;
+        background-color: #aaccff;
+        padding: 0;
     }
 
-    nav div {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
+    #navbar-id {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        /* به ردیف‌های جدید برود در صورت نیاز */
     }
 
     .nav-text {
         font-family: "Vazirmatn", sans-serif;
-        cursor: pointer;
-        width: 100% !important;
-        font-size: 2rem;
-        text-decoration: none;
-        padding: 1rem;
-        text-align: center;
-        background-color: transparent;
-        border-radius: 2rem;
-        margin-bottom: 1rem;
+        font-size: 1.2rem;
         color: #000;
+        text-decoration: none;
         transition: all .3s ease-in-out;
     }
 
     .nav-text:hover {
-        background-color: #00000020;
-        color: #88ccff;
+        color: #fff;
     }
 
-    h1 {
-        text-align: center;
-        margin: 3rem;
-        font-size: 3rem;
-        font-family: "IBM Plex Sans Arabic", sans-serif;
+    .active {
+        font-weight: 900;
     }
 
-    h6 {
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #4896ef;
+        min-width: 100px;
         text-align: center;
-        margin: 3rem;
+        padding: 10px;
+        z-index: 1;
+        border-radius: 1rem;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        padding: 20px 0;
+        display: block;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.2rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.2rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropbtn:hover {
+        color: #fff;
+        transition: all .3s ease-in-out;
+    }
+
+    .header1 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .title {
         font-size: 2rem;
         font-family: "Vazirmatn", sans-serif;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    .description {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 1rem 2rem;
+        line-height: 2rem;
+    }
+
+    .description2 {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 500;
+        margin: 1rem 2rem;
         line-height: 2.5rem;
     }
 
-    a {
+    .support {
+        display: block;
         text-align: center;
-        text-decoration: none;
-        color: wheat;
-        font-family: "Rubik", sans-serif;
-        font-size: 2.5rem;
-        margin: auto;
-        transition: all .2s ease-in-out;
-    }
-
-    a:hover {
-        color: #0099ff;
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 700;
+        margin: 1rem 2rem;
+        line-height: 2rem;
     }
 
     footer {
         bottom: 0;
-        position: relative;
-        background-color: #333333bb;
-        color: #fff;
-        padding: 1rem;
+        background-color: #00000040;
+        color: #000;
+        padding: 2rem;
         display: block;
         justify-content: space-evenly;
         align-items: flex-start;
         transition: all .3s ease-in-out;
+        border-radius: 2rem 0 0 0;
+        margin-top: 2rem;
     }
 
     svg,
@@ -250,15 +312,15 @@ table {
     }
 
     .footer-section p {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-family: "Vazirmatn", sans-serif;
-        line-height: 1.3rem;
+        line-height: 1.5rem;
     }
 
     footer h3 {
-        font-size: 1.5rem;
-        font-family: "Rubik", sans-serif;
-        color: #66ddcc;
+        font-size: 1.8rem;
+        font-family: "Vazirmatn", sans-serif;
+        color: #000000;
         margin: 1rem;
     }
 
@@ -276,144 +338,206 @@ table {
 
     .site-links a {
         text-decoration: none;
-        color: #ffffffcc;
+        color: #000;
         display: block;
         margin-bottom: 0.5rem;
-        font-size: 1rem;
-        font-family: "Rubik", sans-serif;
+        font-size: 1.2rem;
+        font-family: "Vazirmatn", sans-serif;
         transition: all .2s ease-in-out;
     }
 
-    .site-links a:hover {
-        color: #ff77ff;
+    footer article {
+        background-color: #000;
+        padding: 1.5rem;
+        width: 100% !important;
+        margin: -1.5rem;
+        margin-top: 1rem;
     }
 
-    .social {
-        display: block;
-        justify-content: center;
-    }
-
-    .social img,
-    svg {
-        display: block;
-        width: 95%;
-        margin: auto;
-        justify-content: center;
-    }
-
-    .social p {
-        font-family: "Rubik", sans-serif;
+    footer article p {
+        color: #fff;
+        font-size: 1.3rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 400;
         text-align: center;
-        margin: 1.5rem;
-        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    ::selection {
+        background-color: #77aaee;
+        color: #000;
+    }
+
+    ::-moz-selection {
+        background-color: #77aaee;
+        color: #000;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ff0000;
+        border-radius: 1rem;
     }
 }
 
 /* Tablet Page */
 @media screen and (min-width:768px) and (max-width:1023px) {
     body {
-        background: linear-gradient(to right, #66ddcc, #66ddcc, #ffaaee, #ff77ff);
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
+        user-select: none;
+    }
+
+    header {
+        background-image: url(../images/Ellipse-right.png);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: right;
+        background-size: 20%;
     }
 
     .logo {
+        width: 100%;
+        max-width: 70px;
+        height: auto;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 11%;
-        transition: all .3s ease-in-out;
-    }
-
-    .blink {
-        animation: blinker 1.5s linear infinite;
-    }
-
-    @keyframes blinker {
-        50% {
-            color: #fff;
-            opacity: 0.01;
-        }
+        margin: 0 auto;
     }
 
     nav {
+        background-color: #aaccff;
+        padding: 0;
+    }
+
+    #navbar-id {
         display: flex;
-        width: 100% !important;
-        margin: 1rem auto;
-    }
-
-    nav div {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .navbr {
-        display: none;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        /* به ردیف‌های جدید برود در صورت نیاز */
     }
 
     .nav-text {
         font-family: "Vazirmatn", sans-serif;
-        cursor: pointer;
-        font-size: 1.6rem;
-        text-decoration: none;
-        padding: 1rem;
-        margin-right: 1rem;
-        background-color: transparent;
-        border-radius: 1rem;
+        font-size: 1.2rem;
         color: #000;
+        text-decoration: none;
         transition: all .3s ease-in-out;
     }
 
     .nav-text:hover {
-        background-color: #00000020;
         color: #fff;
     }
 
     .active {
-        background-color: #ff999999;
-        color: white;
+        font-weight: 900;
     }
 
-
-    h1 {
-        text-align: center;
-        margin: 3rem;
-        font-size: 3rem;
-        font-family: "IBM Plex Sans Arabic", sans-serif;
+    .dropdown {
+        position: relative;
     }
 
-    h6 {
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #4896ef;
+        min-width: 100px;
         text-align: center;
-        margin: 3rem;
+        padding: 10px;
+        z-index: 1;
+        border-radius: 1rem;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        padding: 20px 0;
+        display: block;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.2rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.2rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropbtn:hover {
+        color: #fff;
+        transition: all .3s ease-in-out;
+    }
+
+    .header1 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .title {
         font-size: 2rem;
         font-family: "Vazirmatn", sans-serif;
+        margin: 1rem;
+        display: block;
+        text-align: center;
+    }
+
+    .description {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 1rem 2rem;
+        line-height: 2rem;
+    }
+
+    .description2 {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 500;
+        margin: 1rem 2rem;
         line-height: 2.5rem;
     }
 
-    a {
+    .support {
+        display: block;
         text-align: center;
-        text-decoration: none;
-        color: wheat;
-        font-family: "Rubik", sans-serif;
-        font-size: 2.5rem;
-        margin: auto;
-        transition: all .2s ease-in-out;
-    }
-
-    a:hover {
-        color: #0099ff;
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 700;
+        margin: 1rem 2rem;
+        line-height: 2rem;
     }
 
     footer {
-        background-color: #333333bb;
-        color: #fff;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-around;
+        bottom: 0;
+        background-color: #00000040;
+        color: #000;
+        padding: 2rem;
+        display: block;
+        justify-content: space-evenly;
         align-items: flex-start;
         transition: all .3s ease-in-out;
-        bottom: 0;
-        position: fixed;
+        border-radius: 2rem 0 0 0;
+        margin-top: 2rem;
     }
 
     svg,
@@ -428,20 +552,20 @@ table {
     }
 
     .footer-section {
-        max-width: 30%;
+        max-width: 99%;
     }
 
     .footer-section p {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-family: "Vazirmatn", sans-serif;
-        line-height: 1.3rem;
+        line-height: 1.5rem;
     }
 
     footer h3 {
-        font-size: 1.5rem;
-        font-family: "Rubik", sans-serif;
-        color: #66ddcc;
-        margin: 0.5rem;
+        font-size: 1.8rem;
+        font-family: "Vazirmatn", sans-serif;
+        color: #000000;
+        margin: 1rem;
     }
 
     .contact-list {
@@ -458,161 +582,207 @@ table {
 
     .site-links a {
         text-decoration: none;
-        color: #ffffffcc;
+        color: #000;
         display: block;
         margin-bottom: 0.5rem;
-        font-size: 1rem;
-        font-family: "Rubik", sans-serif;
+        font-size: 1.2rem;
+        font-family: "Vazirmatn", sans-serif;
         transition: all .2s ease-in-out;
     }
 
-    .site-links a:hover {
-        color: #ff77ff;
+    footer article {
+        background-color: #000;
+        padding: 1.5rem;
+        width: 100% !important;
+        margin: -1.5rem;
+        margin-top: 1rem;
     }
 
-    .social {
-        display: block;
-    }
-
-    .social img,
-    svg {
-        display: block;
-        width: 95%;
-        margin: auto;
-        justify-content: center;
-    }
-
-
-    .social p {
-        font-family: "Rubik", sans-serif;
+    footer article p {
+        color: #fff;
+        font-size: 1.3rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 400;
         text-align: center;
-        margin: 1rem;
-        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    ::selection {
+        background-color: #77aaee;
+        color: #000;
+    }
+
+    ::-moz-selection {
+        background-color: #77aaee;
+        color: #000;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ff0000;
+        border-radius: 1rem;
     }
 }
 
 /* Desktop Page */
 @media screen and (min-width:1024px) {
     body {
-        background: linear-gradient(to right, #66ddcc, #66ddcc, #ffaaee, #ff77ff);
-        transition: all .3s ease-in-out;
+        transition: all .2s ease-in-out;
+        user-select: none;
     }
 
-    ::selection {
-        background-color: #66ddcc;
-        color: #000;
-        /* متن مشکی */
-    }
-
-    ::-moz-selection {
-        background-color: #66ddcc;
-        /* متن مشکی برای Firefox */
-        color: #000;
+    header {
+        background-image: url(../images/Ellipse-right.png);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: right;
+        background-size: 20%;
     }
 
     .logo {
+        width: 100%;
+        max-width: 70px;
+        height: auto;
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 8%;
-        transition: all .3s ease-in-out;
-    }
-
-    .blink {
-        animation: blinker 1.5s linear infinite;
-    }
-
-    @keyframes blinker {
-        50% {
-            color: #fff;
-            opacity: 0.01;
-        }
+        margin: 0 auto;
     }
 
     nav {
+        background-color: #aaccff;
+        padding: 0;
+    }
+
+    #navbar-id {
         display: flex;
-        width: 100% !important;
-        margin: 1rem auto;
-    }
-
-    nav div {
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .navbr {
-        display: none;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        /* به ردیف‌های جدید برود در صورت نیاز */
     }
 
     .nav-text {
         font-family: "Vazirmatn", sans-serif;
-        cursor: pointer;
-        font-size: 1.5rem;
-        text-decoration: none;
-        padding: 1rem;
-        margin-right: 1rem;
-        background-color: transparent;
-        border-radius: 1rem;
+        font-size: 1.2rem;
         color: #000;
+        text-decoration: none;
         transition: all .3s ease-in-out;
     }
 
     .nav-text:hover {
-        background-color: #00000020;
         color: #fff;
     }
 
     .active {
-        background-color: #ff999999;
-        color: white;
+        font-weight: 900;
     }
 
-    h1 {
-        text-align: center;
-        margin: 3rem;
-        font-size: 3rem;
-        font-family: "IBM Plex Sans Arabic", sans-serif;
-        text-shadow: 2px 2px 3px #ffaaeecc;
+    .dropdown {
+        position: relative;
     }
 
-    h6 {
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #4896ef;
+        min-width: 100px;
         text-align: center;
-        margin: 2rem 3rem;
+        padding: 10px;
+        z-index: 1;
+        border-radius: 1rem;
+        width: 100%;
+    }
+
+    .dropdown-content a {
+        padding: 20px 0;
+        display: block;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.2rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+        color: #fff;
+        transition: all .3s ease-in-out;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropbtn {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.2rem;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .dropbtn:hover {
+        color: #fff;
+        transition: all .3s ease-in-out;
+    }
+
+    .header1 {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 2rem 1rem;
+        font-weight: 900;
+        display: block;
+        text-align: center;
+    }
+
+    .description {
+        display: block;
+        text-align: center;
         font-size: 1.5rem;
         font-family: "Vazirmatn", sans-serif;
+        margin: 1rem 3rem;
         line-height: 2.5rem;
     }
 
-    main {
-        margin-bottom: calc();
-    }
-
-    a {
+    .description2 {
+        display: block;
         text-align: center;
-        text-decoration: none;
-        color: wheat;
-        font-family: "Rubik", sans-serif;
-        font-size: 2.5rem;
-        margin: auto;
-        transition: all .2s ease-in-out;
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 500;
+        margin: 1rem 3rem;
+        line-height: 2.5rem;
     }
 
-    a:hover {
-        color: #0099ff;
+    .support {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 700;
+        margin: 1rem 3rem;
+        line-height: 2.4rem;
     }
 
     footer {
         bottom: 0;
-        position: fixed;
-        background-color: #333333bb;
-        color: #fff;
-        padding: 1rem;
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
+        background-color: #00000040;
+        color: #000;
+        padding: 2rem;
+        display: block;
+        justify-content: space-evenly;
         align-items: flex-start;
         transition: all .3s ease-in-out;
+        border-radius: 2rem 0 0 0;
+        margin-top: 2rem;
     }
 
     svg,
@@ -627,20 +797,20 @@ table {
     }
 
     .footer-section {
-        max-width: 30%;
+        max-width: 99%;
     }
 
     .footer-section p {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-family: "Vazirmatn", sans-serif;
-        line-height: 1.3rem;
+        line-height: 1.5rem;
     }
 
     footer h3 {
-        font-size: 1.5rem;
-        font-family: "Rubik", sans-serif;
-        color: #66ddcc;
-        margin: 0.5rem;
+        font-size: 1.8rem;
+        font-family: "Vazirmatn", sans-serif;
+        color: #000000;
+        margin: 1rem;
     }
 
     .contact-list {
@@ -657,45 +827,51 @@ table {
 
     .site-links a {
         text-decoration: none;
-        color: #ffffffcc;
+        color: #000;
         display: block;
         margin-bottom: 0.5rem;
-        font-size: 1rem;
-        font-family: "Rubik", sans-serif;
+        font-size: 1.2rem;
+        font-family: "Vazirmatn", sans-serif;
         transition: all .2s ease-in-out;
     }
 
-    .site-links a:hover {
-        color: #ff77ff;
+    footer article {
+        background-color: #000;
+        padding: 1.5rem;
+        width: 100% !important;
+        margin: -1.5rem;
+        margin-top: 1rem;
     }
 
-    .social {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .social p {
-        font-family: "Rubik", sans-serif;
+    footer article p {
+        color: #fff;
+        font-size: 1.3rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 400;
         text-align: center;
-        margin: 1.5rem;
-        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
-    body::-webkit-scrollbar {
-        width: 10px;
-        /* عرض نوار اسکرول */
+    ::selection {
+        background-color: #77aaee;
+        color: #000;
     }
 
-    body::-webkit-scrollbar-thumb {
-        background-color: #66ddcc;
-        /* رنگ قسمت قلمه */
-        border-radius: 0.5rem;
-        /* گرد کردن گوشه‌ها */
-        margin: 0 0.1rem;
+    ::-moz-selection {
+        background-color: #77aaee;
+        color: #000;
     }
 
-    body::-webkit-scrollbar-track {
-        background-color: #ffaaee;
-        /* رنگ پس زمینه نوار اسکرول */
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
     }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #ff0000;
+        border-radius: 1rem;
+    }
+}
+
+.active {
+    font-weight: 900;
 }
