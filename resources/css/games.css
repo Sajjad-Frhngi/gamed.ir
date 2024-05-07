@@ -148,6 +148,14 @@ table {
         user-select: none;
     }
 
+    header {
+        background-image: url(../images/Ellipse-right.png);
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: right;
+        background-size: 40%;
+    }
+
     .logo {
         width: 100%;
         max-width: 75px;
@@ -234,60 +242,87 @@ table {
         transition: all .3s ease-in-out;
     }
 
-    h1 {
-        font-family: "Vazirmatn", sans-serif;
-        margin: 2rem auto;
-        font-size: 2.5rem;
-        text-align: center;
+    .gameimg {
+        width: 98%;
+        opacity: 90%;
+        border-right: solid #ff0000 0.5rem;
+        border-bottom-right-radius: 1rem;
     }
 
-    .link {
-        color: #ff0000;
-        font-family: "Vazirmatn", sans-serif;
-        font-size: 2rem;
-        line-height: 3rem;
-        text-align: center;
-        font-weight: 900;
-        text-decoration: none;
-    }
-
-    .card {
-        height: 24rem;
-        width: 75%;
-        padding: 1.5rem;
-        margin: 1.5rem auto;
-        border-radius: 1rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .card-title {
-        font-family: "Vazirmatn", sans-serif;
-        font-size: 1.9rem;
-        color: #fff;
-        text-align: center;
-        font-weight: 600;
-        margin: 40% auto;
-    }
-
-    .card:hover .card-desc {
+    article {
         display: block;
+        justify-content: center;
+        align-items: center;
     }
 
-    .card:hover .card-title {
-        margin: 5% auto;
-    }
-
-    .card-desc {
-        transition: all .2s ease-in-out;
-        display: none;
+    .title {
+        text-align: center;
         font-family: "Vazirmatn", sans-serif;
         font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 1rem;
+        font-weight: 500;
+    }
+
+    .game-details {
+        margin: 0.5rem auto;
+        background: #77abee55;
+        border: solid #000 1px;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .game-details h6 {
+        font-size: 1.2rem;
         text-align: center;
-        font-weight: 200;
-        margin: 0.3rem;
-        color: #fff;
-        line-height: 1.8rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        padding: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    .author {
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 3rem;
+        line-height: 2.5rem;
+        border-bottom: groove #77aaee 0.5rem;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0.2rem auto;
+        display: flex;
+    }
+
+    .share {
+        font-size: 1rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 300;
+        margin: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .share-button {
+        font-size: 1.2rem;
+        border: none;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 1.5rem;
+        border-radius: 0.2rem;
+    }
+
+    .article-image {
+        width: 100%;
+        border-bottom: solid #ff0000 0.5rem;
+        border-radius: 0;
+        display: flex;
+        margin: 1rem auto;
     }
 
     footer {
@@ -488,60 +523,87 @@ table {
     }
 
 
-    h1 {
-        font-family: "Vazirmatn", sans-serif;
-        margin: 2rem auto;
-        font-size: 2.5rem;
-        text-align: center;
+    .gameimg {
+        width: 98%;
+        opacity: 90%;
+        border-right: solid #ff0000 0.5rem;
+        border-bottom-right-radius: 1rem;
     }
 
-    .link {
-        color: #ff0000;
-        font-family: "Vazirmatn", sans-serif;
-        font-size: 2rem;
-        line-height: 3rem;
-        text-align: center;
-        font-weight: 900;
-        text-decoration: none;
-    }
-
-    .card {
-        height: 22rem;
-        width: 75%;
-        padding: 1.5rem;
-        margin: 1.5rem auto;
-        border-radius: 1rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .card-title {
-        font-family: "Vazirmatn", sans-serif;
-        font-size: 2rem;
-        color: #fff;
-        text-align: center;
-        font-weight: 600;
-        margin: 30% auto;
-    }
-
-    .card:hover .card-desc {
+    article {
         display: block;
+        justify-content: center;
+        align-items: center;
     }
 
-    .card:hover .card-title {
-        margin: 5% auto;
-    }
-
-    .card-desc {
-        transition: all .2s ease-in-out;
-        display: none;
+    .title {
+        text-align: center;
         font-family: "Vazirmatn", sans-serif;
         font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 1rem;
+        font-weight: 500;
+    }
+
+    .game-details {
+        margin: 0.5rem auto;
+        background: #77abee55;
+        border: solid #000 1px;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        width: 80%;
+    }
+
+    .game-details h6 {
+        font-size: 1.2rem;
         text-align: center;
-        font-weight: 200;
-        margin: 0.3rem;
-        color: #fff;
-        line-height: 1.8rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        padding: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    .author {
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 3rem;
+        line-height: 2.5rem;
+        border-bottom: groove #77aaee 0.5rem;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0.2rem auto;
+        display: flex;
+    }
+
+    .share {
+        font-size: 1rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 300;
+        margin: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .share-button {
+        font-size: 1.2rem;
+        border: none;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 1.5rem;
+        border-radius: 0.2rem;
+    }
+
+    .article-image {
+        width: 100%;
+        border-bottom: solid #ff0000 0.5rem;
+        border-radius: 0;
+        display: flex;
+        margin: 1rem auto;
     }
 
     footer {
@@ -745,67 +807,90 @@ table {
         transition: all .3s ease-in-out;
     }
 
-    h1 {
-        font-family: "Vazirmatn", sans-serif;
-        margin: 2rem auto;
-        font-size: 2.5rem;
-        text-align: center;
-    }
 
-    main {
+    .gameimg {
+        width: 75%;
+        opacity: 90%;
+        border-right: solid #ff0000 0.5rem;
+        border-radius: 2rem;
+        margin: 1rem auto;
         display: flex;
-        justify-content: center;
-        width: 99%;
-        flex-wrap: wrap;
     }
 
-    .link {
-        color: #ff0000;
-        font-family: "Vazirmatn", sans-serif;
-        font-size: 2rem;
-        line-height: 3rem;
-        text-align: center;
-        font-weight: 900;
-        text-decoration: none;
-    }
-
-    .card {
-        height: 23rem;
-        width: 40%;
-        padding: 1.5rem;
-        margin: 1.5rem auto;
-        border-radius: 1rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .card-title {
-        font-family: "Vazirmatn", sans-serif;
-        font-size: 2rem;
-        color: #fff;
-        text-align: center;
-        font-weight: 600;
-        margin: 25% auto;
-    }
-
-    .card:hover .card-desc {
+    article {
         display: block;
+        justify-content: center;
+        align-items: center;
     }
 
-    .card:hover .card-title {
-        margin: 5% auto;
-    }
-
-    .card-desc {
-        transition: all .2s ease-in-out;
-        display: none;
+    .title {
+        text-align: center;
         font-family: "Vazirmatn", sans-serif;
         font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 1rem;
+        font-weight: 500;
+    }
+
+    .game-details {
+        margin: 0.5rem auto;
+        background: #77abee55;
+        border: solid #000 1px;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        width: 70%;
+    }
+
+    .game-details h6 {
+        font-size: 1.2rem;
         text-align: center;
-        font-weight: 200;
-        margin: 0.3rem;
-        color: #fff;
-        line-height: 1.8rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .description {
+        padding: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.3rem;
+        line-height: 1.7rem;
+    }
+
+    .author {
+        font-size: 1.5rem;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 3rem;
+        line-height: 2.5rem;
+        border-bottom: groove #77aaee 0.5rem;
+    }
+
+    aside {
+        width: 100%;
+        margin: 0.2rem auto;
+        display: flex;
+    }
+
+    .share {
+        font-size: 1rem;
+        font-family: "Vazirmatn", sans-serif;
+        font-weight: 300;
+        margin: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .share-button {
+        font-size: 1.2rem;
+        border: none;
+        font-family: "Vazirmatn", sans-serif;
+        margin: 1.5rem;
+        border-radius: 0.2rem;
+    }
+
+    .article-image {
+        width: 100%;
+        border-bottom: solid #ff0000 0.5rem;
+        border-radius: 0;
+        display: flex;
+        margin: 1rem auto;
     }
 
     footer {
@@ -906,4 +991,11 @@ table {
         background-color: #ff0000;
         border-radius: 1rem;
     }
+
+}
+
+
+a {
+    color: #0000ff;
+    text-decoration: none;
 }

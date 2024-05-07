@@ -148,14 +148,6 @@ table {
         user-select: none;
     }
 
-    header {
-        background-image: url(../images/Ellipse-right.png);
-        background-repeat: no-repeat;
-        background-position-y: top;
-        background-position-x: right;
-        background-size: 40%;
-    }
-
     .logo {
         width: 100%;
         max-width: 75px;
@@ -242,242 +234,61 @@ table {
         transition: all .3s ease-in-out;
     }
 
-    .title {
+    h1 {
         font-family: "Vazirmatn", sans-serif;
-        font-size: 1.8rem;
-        margin: 2rem;
-        font-weight: 300;
+        margin: 2rem auto;
+        font-size: 2.5rem;
         text-align: center;
     }
 
-    .title .farabazi {
-        font-size: 5rem;
-        font-weight: 900;
+    .link {
         color: #ff0000;
-        margin: 2rem;
-        text-shadow: -8px 8px 5px #77aaee;
-    }
-
-    .title .subtitle {
-        font-size: 1.3rem;
-        font-weight: 200;
-        color: #000;
-        margin: 2rem 1rem;
-        padding: 0.5rem;
-        box-shadow: -0.5rem 0.5rem 0 #000000;
-        background-color: #ff000044;
-        border-radius: 1rem;
-    }
-
-    .header-img {
-        width: 60%;
-        margin: 1rem 20%;
-    }
-
-    #categories,
-    #platforms {
-        margin: 3rem;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1.5rem;
-    }
-
-    #categories,
-    #platforms h4 {
         font-family: "Vazirmatn", sans-serif;
         font-size: 2rem;
-        font-weight: 700;
+        line-height: 3rem;
         text-align: center;
+        font-weight: 900;
+        text-decoration: none;
     }
 
-    .category-box,
-    .platform-box {
+    .card {
+        height: 24rem;
+        width: 75%;
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+        border-radius: 1rem;
         background-size: cover;
-        background-position: center;
-        border-radius: 0.5rem;
-        overflow: hidden;
+        background-repeat: no-repeat;
+    }
+
+    .card-title {
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 2rem;
         color: #fff;
         text-align: center;
-        padding: 2rem;
-        position: relative;
-        box-shadow: 0.1rem 0.1rem 0.5rem #000;
+        font-weight: 600;
+        margin: 40% auto;
     }
 
-    #action-cat {
-        background-image: url('../images/home_images/action-cat.jpg');
-        /* جایگزین 'action.jpg' با نام واقعی عکس اکشن */
+    .card:hover .card-desc {
+        display: block;
     }
 
-    #adventure-cat {
-        background-image: url('../images/home_images/adventure-cat.jpg');
-        /* جایگزین 'adventure.jpg' با نام واقعی عکس ماجراجویی */
+    .card:hover .card-title {
+        margin: 5% auto;
     }
 
-    #sport-cat {
-        background-image: url('../images/home_images/sport-cat.jpg');
-        /* جایگزین 'sport.jpg' با نام واقعی عکس ورزشی */
-    }
-
-    #scary-cat {
-        background-image: url('../images/home_images/scary-cat.jpg');
-        /* جایگزین 'scary.jpg' با نام واقعی عکس ترسناک */
-    }
-
-    h5 {
-        margin: 0;
-        font-size: 1.5rem;
+    .card-desc {
+        transition: all .2s ease-in-out;
+        display: none;
         font-family: "Vazirmatn", sans-serif;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 0.5rem;
-        border-radius: 0 0 0.5rem 0.5rem;
-    }
-
-    .top-articles-section {
-        width: 80%;
-        margin: 2rem auto;
-        background-color: #fff;
-        border: 1px solid #000;
-        padding: 1rem;
-        border-radius: 1rem;
-        box-shadow: -1rem 1rem 0 #00000055;
-    }
-
-    .top-articles-section h3 {
-        font-size: 1.8rem;
-        font-family: "Vazirmatn", sans-serif;
-        padding: 1rem;
+        font-size: 1.4rem;
         text-align: center;
-        margin-bottom: 1.5rem;
-        border: 1px solid #000;
-        border-radius: 1rem;
-        background-color: #ff000099;
+        font-weight: 200;
+        margin: 0.3rem;
+        color: #fff;
+        line-height: 1.8rem;
     }
-
-    .top-articles-section h4 {
-        font-size: 1.8rem;
-        font-family: "Vazirmatn", sans-serif;
-        padding: 1rem;
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-
-    .article {
-        background-color: #ffffffa8;
-        margin-bottom: 1rem;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .article img {
-        width: 70%;
-        height: 35%;
-        margin: 0.2rem auto;
-        border-radius: 1.5rem;
-    }
-
-    .article a {
-        font-size: 1.2rem;
-        font-family: "Vazirmatn", sans-serif;
-        color: #000;
-        text-decoration: none;
-        text-align: center;
-        padding: 0.5rem;
-    }
-
-    .article h4 {
-        margin: 0;
-    }
-
-    .article p {
-        font-size: 1rem;
-        color: #757575;
-        margin-top: 1rem;
-        font-family: "Vazirmatn", sans-serif;
-        text-align: center;
-        padding: 0 1rem;
-        line-height: 1.3rem;
-    }
-
-    #ps-plat {
-        background-image: url('../images/home_images/ps-plat.png');
-    }
-
-    #pc-plat {
-        background-image: url('../images/home_images/pc-plat.png');
-    }
-
-    #mobile-plat {
-        background-image: url('../images/home_images/mobile-plat.png');
-    }
-
-    .top-games-section {
-        width: 80%;
-        margin: 2rem auto;
-        background-color: #fff;
-        border: 1px solid #000;
-        padding: 1rem;
-        border-radius: 1rem;
-        box-shadow: -1rem 1rem 0 #00000055;
-    }
-
-    .top-games-section h3 {
-        font-size: 1.8rem;
-        font-family: "Vazirmatn", sans-serif;
-        padding: 1rem;
-        text-align: center;
-        margin-bottom: 1.5rem;
-        border: 1px solid #000;
-        border-radius: 1rem;
-        background-color: #ff000099;
-    }
-
-    .top-games-section h4 {
-        font-size: 1.8rem;
-        font-family: "Vazirmatn", sans-serif;
-        padding: 1rem;
-        text-align: center;
-        margin-bottom: 1.5rem;
-    }
-
-    .game {
-        background-color: #ffffffa8;
-        margin-bottom: 1rem;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .game img {
-        width: 40%;
-        height: 40%;
-        border-radius: 2rem;
-        margin: 0 auto;
-    }
-
-    .game a {
-        font-size: 1.2rem;
-        font-family: "Vazirmatn", sans-serif;
-        color: #000;
-        text-decoration: none;
-        text-align: center;
-        padding: 0.5rem;
-        margin-top: 0.5rem;
-    }
-
-    .game h4 {
-        margin: 0;
-    }
-
-    .game p {
-        margin: 1rem;
-        font-size: 1.5rem;
-        font-family: "Vazirmatn", sans-serif;
-        text-align: center;
-    }
-
 
     footer {
         bottom: 0;
@@ -674,6 +485,63 @@ table {
         color: #000;
         text-decoration: none;
         transition: all .3s ease-in-out;
+    }
+
+
+    h1 {
+        font-family: "Vazirmatn", sans-serif;
+        margin: 2rem auto;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .link {
+        color: #ff0000;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: center;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    .card {
+        height: 22rem;
+        width: 75%;
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+        border-radius: 1rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .card-title {
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.9rem;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        margin: 30% auto;
+    }
+
+    .card:hover .card-desc {
+        display: block;
+    }
+
+    .card:hover .card-title {
+        margin: 5% auto;
+    }
+
+    .card-desc {
+        transition: all .2s ease-in-out;
+        display: none;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.4rem;
+        text-align: center;
+        font-weight: 200;
+        margin: 0.3rem;
+        color: #fff;
+        line-height: 1.8rem;
     }
 
     footer {
@@ -877,10 +745,67 @@ table {
         transition: all .3s ease-in-out;
     }
 
-    .header1 {
+    h1 {
+        font-family: "Vazirmatn", sans-serif;
+        margin: 2rem auto;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    main {
         display: flex;
-        width: 100%;
-        justify-content: space-between;
+        justify-content: center;
+        width: 99%;
+        flex-wrap: wrap;
+    }
+
+    .link {
+        color: #ff0000;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 2rem;
+        line-height: 3rem;
+        text-align: center;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+    .card {
+        height: 24rem;
+        width: 40%;
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+        border-radius: 1rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .card-title {
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 2rem;
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        margin: 25% auto;
+    }
+
+    .card:hover .card-desc {
+        display: block;
+    }
+
+    .card:hover .card-title {
+        margin: 5% auto;
+    }
+
+    .card-desc {
+        transition: all .2s ease-in-out;
+        display: none;
+        font-family: "Vazirmatn", sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 200;
+        margin: 0.3rem;
+        color: #fff;
+        line-height: 1.8rem;
     }
 
     footer {

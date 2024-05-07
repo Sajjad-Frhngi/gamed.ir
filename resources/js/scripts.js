@@ -5,20 +5,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const topArticles = [
         {
             title: 'حماسه‌ای درام و هیجان‌انگیز در موسیقی',
-            image: '../gamed.ir/resources/images/games-articles/final-fantasy.png',
-            link: '../gamed.ir/article1.html',
+            image: "../resources/images/games-articles/final-fantasy.png",
+            link: '../articles/best-music.html',
             description: 'یک موسیقی خوب و گوش‌نواز می‌تواند لذت مبارزه را دوچندان کند. همچنین موسیقی در میان‌پرده‌های سینمایی بازی هم نقش داشته و باعث می‌شود تا بازیکن بهتر بتواند با وقایع داستانی و سکانس‌های درام یا هیجان‌انگیز و حماسی بازی ارتباط برقرار کند...',
         },
         {
             title: 'شاهکار اپیک‌گیمز، بهترین بازی سال',
-            image: '../gamed.ir/resources/images/games-articles/alanwake2.png',
-            link: '../gamed.ir/articles/best-game.html',
+            image: '../resources/images/games-articles/alanwake2.png',
+            link: '../articles/best-game.html',
             description: 'این داستان دنباله‌ای بر آلن ویک است و داستان رمان‌نویس پرفروش ترسناک آلن ویک را دنبال می‌کند که به مدت ۱۳ سال در یک بُعد جایگزین گرفتار شده‌است و تلاش می‌کند با نوشتن داستانی ترسناک که شامل یک مأمور اف‌بی‌آی به نام ساگا اندرسون است، فرار کند...',
         },
         {
             title: 'فلسفه تغییر نام، FC24',
-            image: '../gamed.ir/resources/images/games-articles/fifa24.png',
-            link: '../gamed.ir/articles/fc24name.html',
+            image: '../resources/images/games-articles/fifa24.png',
+            link: '../articles/fc24name.html',
             description: 'درحالی که منتظر انتشار فیفا24 بودیم، این بار شرکت هنرهای الکترونیک، با نامی جدید از برترین بازی فوتبالی دنیا رونمایی کرد و کامل‌ترین نسخه تاریخ فیفا را منتشر کرد...',
         },
         // {
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
         articleElement.appendChild(linkElement);
 
         const descElement = document.createElement('p');
-        descElement.textContent = article.description; // استفاده از textContent برای توضیحات
+        descElement.textContent = article.description;
         articleElement.appendChild(descElement);
 
         articleContainer.appendChild(articleElement);
@@ -57,27 +57,27 @@ document.addEventListener('DOMContentLoaded', function () {
     const topGames = [
         {
             title: 'کابوس های کوچک (Little nightmares)',
-            image: '../gamed.ir/resources/images/games-articles/little-nightmare.png',
-            link: 'a.html',
+            image: '../resources/images/games-articles/little-nightmare.png',
+            link: '../games/little-nightmares.html',
             category: 'ترسناک',
         },
         {
             title: 'خدای جنگ: رگناروک (GoW: Ragnarök)',
-            image: '../gamed.ir/resources/images/games-articles/godofwar5.png',
-            link: 'a.html',
+            image: '../resources/images/games-articles/godofwar5.png',
+            link: '../games/gow.html',
             category: 'اکشن',
+        },
+        {
+            title: 'FC24 | فیفا24',
+            image: '../resources/images/games-articles/fifa24logo.png',
+            link: '../games/fifa24.html',
+            category: 'ورزشی',
         },
         // {
         //     title: 'بازی 3',
         //     image: '../gamed.ir/resources/images/logo-gamed.png',
         //     link: 'a.html',
         //     category: 'ماجراجویی',
-        // },
-        // {
-        //     title: 'بازی 4',
-        //     image: '../gamed.ir/resources/images/logo-gamed.png',
-        //     link: 'a.html',
-        //     category: 'ورزشی',
         // },
     ];
 
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     if ("loading" in HTMLImageElement.prototype) {
-        const images = document.querySelectorAll("img[loading='lazy']");
+        const images = document.querySelectorAll("img[loading='lazy']:not(.logo):not(.header-img)");
         images.forEach(img => {
             img.setAttribute("loading", "lazy");
         });
@@ -129,13 +129,39 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if ("loading" in HTMLImageElement.prototype) {
-        const headImage = document.getElementById("")
+        const headImage = document.getElementById("");
     }
 });
 
 window.addEventListener('resize', function () {
     if (window.innerWidth < 310) {
         alert('این سایت با اندازه عرض صفحه شما سازگاری ندارد، لطفا از دستگاه یا صفحه بزرگتر استفاده نمایید!');
-        console.log("Sorry, this width is not supported!")
+        console.log("Sorry, this width is not supported!");
+    }
+});
+const hamburgerHandler = () => {
+    const mobileNavbar = document.querySelector("#mobile-navbar");
+    const logoHide = document.querySelector("#logo");
+    const hamburger = document.querySelector("#hamber");
+    const multiply = document.querySelector('#multiply');
+    hamburger.style.display = "none";
+    multiply.style.display = "block";
+    mobileNavbar.style.display = "block";
+    logoHide.style.display = "none";
+}
+const multiplyHandler = () => {
+    const mobileNavbar = document.querySelector("#mobile-navbar");
+    const hamburger = document.querySelector("#hamber");
+    const logoHide = document.querySelector("#logo");
+    logoHide.style.display = "block";
+    const multiply = document.querySelector('#multiply');
+    hamburger.style.display = "block";
+    multiply.style.display = "none";
+    mobileNavbar.style.display = "none";
+}
+window.addEventListener('resize', function () {
+    if (window.innerWidth < 768) {
+        const mobileNavbar = document.querySelector("#mobile-navbar");
+        mobileNavbar.style.display = "none";
     }
 });
